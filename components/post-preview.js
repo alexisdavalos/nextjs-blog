@@ -21,7 +21,7 @@ export default function PostPreview({
               <a className="hover:underline">{title}</a>
             </Link>
           </h3>
-          <p className="text-lg leading-relaxed mb-4 text-gray-700 text-base">
+          <p className="text-sm leading-relaxed mb-4 text-gray-700">
             {excerpt}
           </p>
         </div>

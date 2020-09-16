@@ -1,4 +1,5 @@
 import { CMS_NAME } from "../lib/constants";
+import Typed from "react-typed";
 
 export default function Intro() {
   return (
@@ -6,21 +7,24 @@ export default function Intro() {
       <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
         <div className="flex flex-col w-full">
           <h1 className="text-6xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
-            Alexis Davalos.
+            Stoic.Dev
           </h1>
-          <h3 className="text-2xl md:text-2xl font-light tracking-normal mb-6">
-            Design and Programming Blog
-          </h3>
+          <Typed
+            className="text-2l md:text-2xl tracking-normal opacity-75 mb-6 font-light"
+            strings={[`Design and Programming Blog `]}
+            typeSpeed={80}
+            backSpeed={75}
+          />
         </div>
-        <h4 className="text-left md:text-left text-lg mt-5 md:pl-8 w-1/2 sm:w-full">
+        <h4 className="text-left md:text-left text-lg opacity-75 mt-5 md:pl-8 w-1/3 sm:w-full">
           Statically generated thoughts using{" "}
           <a
             href="https://nextjs.org/"
             className="underline hover:text-success duration-200 transition-colors"
           >
-            Next.js
+            Next.js,
           </a>{" "}
-          and {CMS_NAME}.
+          {CMS_NAME}, and TailWind CSS
         </h4>
       </section>
     </>

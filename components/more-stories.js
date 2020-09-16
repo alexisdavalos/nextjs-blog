@@ -1,10 +1,12 @@
-import PostPreview from "../components/post-preview";
+// import PostPreview from "../components/post-preview";
+import dynamic from "next/dynamic";
 
+const PostPreview = dynamic(import("../components/post-preview"));
 export default function MoreStories({ posts }) {
   return (
     <section className="">
       <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
-        More Stories
+        More Articles
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-16 md:row-gap-6 mb-32">
         {posts.map((post) => (

@@ -1,7 +1,6 @@
 import DateFormatter from "./date-formatter";
 
 export default function Avatar({ name, picture, date }) {
-  console.log("date in avatar.js", date);
   return (
     <div className="flex items-center">
       <img src={picture} className="w-12 h-12 rounded-full mr-4" alt={name} />
