@@ -4,8 +4,8 @@ import Typed from "react-typed";
 export default function Intro() {
   return (
     <>
-      <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-        <div className="flex flex-col w-full">
+      <section className="flex-row md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
+        <div className="flex flex-col w-1/2">
           <h1 className="text-6xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
             Stoic.Dev
           </h1>
@@ -16,15 +16,15 @@ export default function Intro() {
             backSpeed={75}
           />
         </div>
-        <h4 className="text-left md:text-left text-lg opacity-75 mt-5 md:pl-8 w-1/3 sm:w-full">
+        <h4 className="text-left text-lg md:text-xl sm:text-base opacity-75 mt-5 md:pl-8 md:w-1/2 sm:w-1/2">
           Statically generated thoughts using{" "}
           <a
             href="https://nextjs.org/"
             className="underline hover:text-success duration-200 transition-colors"
           >
-            Next.js,
+            Next.js
           </a>{" "}
-          {CMS_NAME}, and TailWind CSS
+          and {CMS_NAME}.
         </h4>
       </section>
     </>
