@@ -19,7 +19,7 @@ export default function Intro() {
             backSpeed={75}
           />
         </div>
-        <h4 className="w-1/3 text-left text-md md:text-xl sm:text-base opacity-75 md:pl-8">
+        <h4 className="w-1/3 text-left text-xs opacity-75 md:pl-8">
           Statically generated thoughts using{" "}
           <a
             href="https://nextjs.org/"
