@@ -1,7 +1,6 @@
-// import PostPreview from "../components/post-preview";
 import dynamic from "next/dynamic";
-
 const PostPreview = dynamic(import("../components/post-preview"));
+
 export default function MoreStories({ posts }) {
   return (
     <section className="">

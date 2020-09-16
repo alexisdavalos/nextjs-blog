@@ -1,7 +1,7 @@
+import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/container";
-import PostBody from "../../components/post-body";
 import Header from "../../components/header";
 import PostHeader from "../../components/post-header";
 import Layout from "../../components/layout";
@@ -10,13 +10,14 @@ import PostTitle from "../../components/post-title";
 import Head from "next/head";
 import { CMS_NAME } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
+const PostBody = dynamic(import("../../components/post-body"));
+const MoreStories = dynamic(import("../../components/more-stories"));
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
-  console.log(post);
   return (
     <Layout preview={preview}>
       <Container>
@@ -44,6 +45,11 @@ export default function Post({ post, morePosts, preview }) {
               />
               <PostBody content={post.content} />
             </article>
+            {morePosts ? (
+              <MoreStories posts={morePosts} />
+            ) : (
+              <div>Loading...</div>
+            )}
           </>
         )}
       </Container>
@@ -52,7 +58,17 @@ export default function Post({ post, morePosts, preview }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, [
+  const allPosts = getAllPosts([
+    "title",
+    "date",
+    "slug",
+    "author",
+    "topics",
+    "coverImage",
+    "excerpt",
+  ]);
+
+  const curPost = getPostBySlug(params.slug, [
     "title",
     "date",
     "slug",
@@ -62,14 +78,18 @@ export async function getStaticProps({ params }) {
     "ogImage",
     "coverImage",
   ]);
-  const content = await markdownToHtml(post.content || "");
+
+  const otherPosts = allPosts.filter((post) => post.title !== curPost.title);
+
+  const content = await markdownToHtml(curPost.content || "");
 
   return {
     props: {
       post: {
-        ...post,
+        ...curPost,
         content,
       },
+      morePosts: [...otherPosts],
     },
   };
 }
