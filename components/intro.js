@@ -1,10 +1,13 @@
 import { CMS_NAME } from "../lib/constants";
 import Typed from "react-typed";
+import introStyles from "../styles/intro.module.scss";
 
 export default function Intro() {
   return (
-    <>
-      <section className="flex-row md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
+    <div
+      className={`border-b-4 ${introStyles.hueRotate} ${introStyles.bottomShadow}`}
+    >
+      <section className="flex-row md:flex-row flex items-center align-middle md:justify-between mt-16 mb-16 md:mb-12">
         <div className="flex flex-col w-1/2">
           <h1 className="text-6xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
             Stoic.Dev
@@ -16,7 +19,7 @@ export default function Intro() {
             backSpeed={75}
           />
         </div>
-        <h4 className="text-left text-lg md:text-xl sm:text-base opacity-75 mt-5 md:pl-8 md:w-1/2 sm:w-1/2">
+        <h4 className="text-left text-lg md:text-xl sm:text-base opacity-75 md:pl-8 md:w-1/2 sm:w-1/2">
           Statically generated thoughts using{" "}
           <a
             href="https://nextjs.org/"
@@ -27,6 +30,6 @@ export default function Intro() {
           and {CMS_NAME}.
         </h4>
       </section>
-    </>
+    </div>
   );
 }
