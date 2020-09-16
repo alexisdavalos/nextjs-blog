@@ -13,7 +13,7 @@ export default function Index({ allPosts }) {
     <>
       <Layout>
         <Head>
-          <title>Stoic.Dev Blog</title>
+          <title>Design and Programming Blog</title>
         </Head>
         <Container>
           <Intro />
