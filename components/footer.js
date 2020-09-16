@@ -46,15 +46,20 @@ export default function Footer({ typedState }) {
         <div className="py-12 flex items-center justify-center text-center flex-col">
           <img
             className="w-16 md:w-16 lg:w-32 color:black"
-            src="https://reviewapp-a76f1.web.app/img/alexis_davalos_logo.1c180d92.png"
+            src="/favicons/android-chrome-512x512.png"
           ></img>
           <p className="mb-10 mt-10 text-white">
-            <strong>Built</strong> by{" "}
-            <a href="https://github.com/alexisdavalos" target="_blank">
+            Built by{" "}
+            <a
+              className="underline font-bold"
+              href="https://github.com/alexisdavalos"
+              target="_blank"
+            >
               Alexis Davalos
             </a>
             . The source code is licensed under open source{" "}
             <a
+              className="underline font-bold"
               href="http://opensource.org/licenses/mit-license.php"
               target="_blank"
             >

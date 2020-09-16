@@ -17,7 +17,8 @@ export default function Alert({ dark = true }) {
               Checkout my repository of coding challenges{" "}
               <a
                 href={`${ALERT_PATH}`}
-                className="underline hover:text-success duration-200 transition-colors"
+                className="underline hover:text-blue-500 duration-200 transition-colors"
+                target="_blank"
               >
                 on GitHub
               </a>
@@ -28,7 +29,7 @@ export default function Alert({ dark = true }) {
               The source code for this blog is{" "}
               <a
                 href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-                className="underline hover:text-success duration-200 transition-colors"
+                className="underline hover:text-blue-500 duration-200 transition-colors"
               >
                 available on GitHub
               </a>
