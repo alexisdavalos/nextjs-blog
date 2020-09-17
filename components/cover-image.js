@@ -5,9 +5,9 @@ import coverStyles from "../styles/cover-image.module.scss";
 export default function CoverImage({ title, src, slug, hero }) {
   const image = (
     <img
-      src={src}
+      src={src ? src : `meta/og-image.png`}
       alt={`Cover Image for ${title}`}
-      className={cn("shadow-small h-500", {
+      className={cn("shadow-small", {
         "hover:shadow-medium transition-shadow duration-200": slug,
       })}
     />

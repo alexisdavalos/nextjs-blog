@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { CMS_NAME } from "../lib/constants";
 import Typed from "react-typed";
 import introStyles from "../styles/intro.module.scss";
@@ -9,9 +10,11 @@ export default function Intro() {
     >
       <section className="flex-row md:flex-row flex items-center align-middle justify-evenly mt-16 mb-16 md:mb-12">
         <div className="flex flex-col w-1/2">
-          <h1 className="text-6xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
-            Stoic.Dev
-          </h1>
+          <Link href="/posts/about">
+            <h1 className="hover:underline cursor-pointer text-6xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
+              Stoic.Dev
+            </h1>
+          </Link>
           <Typed
             className="text-2l md:text-2xl tracking-normal opacity-75 mb-6 font-light"
             strings={[`Design and Programming Blog `]}
