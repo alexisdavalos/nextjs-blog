@@ -20,7 +20,7 @@ export default function Footer({ typedState }) {
           <div className="py-16 flex flex-col lg:flex-row items-center">
             {/* Typed Element */}
             <Typed
-              className="text-3xl lg:text-4xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2"
+              className="text-3xl lg:text-4xl font-bold tracking-tighter leading-tight text-center mb-10 lg:mb-0 lg:pr-4 lg:w-1/2"
               strings={FOOTER_MESSAGES}
               typeSpeed={60}
               backSpeed={75}
