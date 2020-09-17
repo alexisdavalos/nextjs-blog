@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { CMS_NAME } from "../lib/constants";
 import Typed from "react-typed";
-import introStyles from "../styles/intro.module.scss";
+import animations from "../styles/animations.module.scss";
 
 export default function Intro() {
   return (
     <div
-      className={`border-b-4 ${introStyles.hueRotate} ${introStyles.bottomShadow}`}
+      className={`border-b-4 ${animations.hueRotate} ${animations.bottomShadow}`}
     >
       <section className="flex-row md:flex-row flex items-center align-middle justify-evenly mt-16 mb-16 md:mb-12">
         <div className="flex flex-col w-1/2">
