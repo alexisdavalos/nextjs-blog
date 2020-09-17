@@ -1,8 +1,9 @@
-import Container from "../components/container";
-import MoreStories from "../components/more-stories";
-import HeroPost from "../components/hero-post";
-import Intro from "../components/intro";
-import Layout from "../components/layout";
+import dynamic from "next/dynamic";
+const Container = dynamic(import("../components/container"));
+const MoreStories = dynamic(import("../components/more-stories"));
+const HeroPost = dynamic(import("../components/hero-post"));
+const Intro = dynamic(import("../components/intro"));
+const Layout = dynamic(import("../components/layout"));
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 

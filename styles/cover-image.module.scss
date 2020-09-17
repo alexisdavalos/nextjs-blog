@@ -1,0 +1,15 @@
+.coverImage {
+  min-height: 222px;
+  height: 222px;
+  a {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.coverHero {
+  height: 100%;
+}
