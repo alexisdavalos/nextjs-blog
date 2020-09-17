@@ -1,6 +1,6 @@
 ---
 title: "Hello World... from My New Blog!"
-excerpt: "I'm a Fullstack Engineer with a passion for constantly learning and pushing the boundaries of my comfort zone. I have 2+ years of experience in Front-End Development working on design, deployment, and maintenance of web-based projects and 3+ years of experience in Graphic Design and Marketing. I am very comfortable using design tools like Photoshop, Illustrator, After Effects, and Premiere."
+excerpt: "I'm a Fullstack Engineer with a passion for constantly learning and pushing the boundaries of my comfort zone. I have 2+ years of experience in Front-End Development working on design, deployment, and maintenance of web-based projects...."
 coverImage: "/assets/blog/about/banner-min.gif"
 date: "2020-09-17T05:35:07.322Z"
 author:
