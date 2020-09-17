@@ -18,7 +18,7 @@ for (let i = 0; i < arr.length; i++) {
 
 ## Demo
 
-[https://nextjs-blog-woad-one.vercel.app/](https://nextjs-blog-woad-one.vercel.app/)
+[https://stoicdev.vercel.app/](https://stoicdev.vercel.app/)
 
 ## Deployment
 
