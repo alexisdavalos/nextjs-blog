@@ -28,7 +28,7 @@ export default function HeroPost({
           </div>
         </div>
         <div>
-          <p className="text-sm leading-relaxed mb-4">{excerpt}</p>
+          <p className="mx-5 mb-10 text-sm leading-relaxed mb-4">{excerpt}</p>
           <Avatar name={author.name} picture={author.picture} date={date} />
         </div>
       </div>
