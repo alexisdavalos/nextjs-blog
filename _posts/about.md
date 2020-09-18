@@ -94,6 +94,6 @@ topics:
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=alexisdavalos&layout=compact&theme=dracula&card_width=445)](https://github.com/alexisdavalos/)
 
-<div class="mb-16 mt-16 border-b-4">
+<div>
 <p class="text-md text-black text-bold">Github Stats Made Possible By: <a class="text-gray-700  font-bold hover:underline hover:text-blue-500 duration-200 transition-colors" href="https://github.com/anuraghazra/github-readme-stats">Anuraghazra</a></p>
 </div>

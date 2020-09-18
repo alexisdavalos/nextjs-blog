@@ -28,7 +28,7 @@ export default function Post({ post, morePosts, preview }) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-16">
+            <article className="mb-16 mt-16 border-b-4">
               <Head>
                 <title>{post.title} | Stoic.Dev Blog</title>
                 <meta property="og:image" content={post.ogImage.url} />

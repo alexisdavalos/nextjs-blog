@@ -48,5 +48,8 @@ h3 {
 
 .flex + p > img {
   width: 80%;
+  @media screen and (max-width: 640px) {
+    width: 100%;
+  }
   filter: saturate(0.7);
 }
