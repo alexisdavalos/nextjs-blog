@@ -32,6 +32,9 @@ export default function Post({ post, morePosts, preview }) {
               <Head>
                 <title>{post.title} | Stoic.Dev Blog</title>
                 <meta property="og:image" content={post.ogImage.url} />
+                <meta property="og:title" content={post.title} />
+                <meta property="og:date" content={post.date} />
+                <meta property="og:author" content={post.author.name} />
                 <link
                   rel="stylesheet"
                   href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css"
