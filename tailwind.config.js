@@ -32,6 +32,18 @@ module.exports = {
         small: "0 5px 10px rgba(0, 0, 0, 0.12)",
         medium: "0 8px 30px rgba(0, 0, 0, 0.12)",
       },
+      screens: {
+        "x-sm": "540px",
+        // => @media (min-width: 640px) { ... }
+        sm: "640px",
+        // => @media (min-width: 640px) { ... }
+
+        md: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
+        lg: "1280px",
+        // => @media (min-width: 1280px) { ... }
+      },
     },
   },
 };

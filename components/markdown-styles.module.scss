@@ -16,3 +16,14 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+.markdown ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.markdown ul > li {
+  text-align: left;
+  width: 90%;
+}

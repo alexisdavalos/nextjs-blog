@@ -2,7 +2,6 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Head from "next/head";
-
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import { CMS_NAME } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
@@ -16,6 +15,7 @@ const PostBody = dynamic(import("../../components/post-body"));
 const MoreStories = dynamic(import("../../components/more-stories"));
 
 export default function Post({ post, morePosts, preview }) {
+  console.log(post);
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -28,7 +28,7 @@ export default function Post({ post, morePosts, preview }) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+            <article className="mb-16">
               <Head>
                 <title>{post.title} | Stoic.Dev Blog</title>
                 <meta property="og:image" content={post.ogImage.url} />
