@@ -1,6 +1,11 @@
-import Avatar from "../components/avatar";
-import CoverImage from "./cover-image";
+import dynamic from "next/dynamic";
 import Link from "next/link";
+const Avatar = dynamic(import("../components/avatar"));
+const CoverImage = dynamic(() => import("../components/cover-image"), {
+  loading: () => (
+    <p className="w-full min-h-315 flex justify-content ">Loading...</p>
+  ),
+});
 
 export default function PostPreview({
   title,

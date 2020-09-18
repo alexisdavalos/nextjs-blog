@@ -1,7 +1,13 @@
-import Avatar from "../components/avatar";
-import DateFormatter from "../components/date-formatter";
-import CoverImage from "../components/cover-image";
-import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const Avatar = dynamic(import("../components/avatar"));
+const DateFormatter = dynamic(import("../components/date-formatter"));
+const Link = dynamic(import("next/link"));
+const CoverImage = dynamic(() => import("../components/cover-image"), {
+  loading: () => (
+    <p className="w-full min-h-315 flex justify-content ">Loading...</p>
+  ),
+});
 
 export default function HeroPost({
   title,

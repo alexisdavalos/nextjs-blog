@@ -1,6 +1,5 @@
 import cn from "classnames";
 import Link from "next/link";
-import coverStyles from "../styles/cover-image.module.scss";
 
 export default function CoverImage({ title, src, slug, hero }) {
   const image = (
