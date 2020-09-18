@@ -13,7 +13,7 @@ export default function PostPreview({
 }) {
   return (
     <div className="max-w-m rounded overflow-hidden shadow-lg mb-10 mr-3">
-      <CoverImage slug={slug} title={title} src={coverImage} />
+      <CoverImage slug={slug} title={title} src={coverImage} hero={false} />
       <div className="flex flex-col justify-evenly">
         <div className="px-6 py-4">
           <h3 className="text-3xl mb-3 mt-3 truncate leading-snug">
