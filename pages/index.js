@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import { getAllPosts } from "../lib/api";
-
+import { HOME_OG_IMAGE_URL } from "../lib/constants";
 const Container = dynamic(import("../components/container"));
 const MoreStories = dynamic(import("../components/more-stories"));
 const HeroPost = dynamic(import("../components/hero-post"));
@@ -16,6 +16,7 @@ export default function Index({ allPosts }) {
       <Layout>
         <Head>
           <title>Design and Programming Blog</title>
+          <meta property="og:image" content={HOME_OG_IMAGE_URL} />
         </Head>
         <Container>
           <Intro />
