@@ -7,7 +7,7 @@ export default function CoverImage({ title, src, slug, hero }) {
     <img
       src={src ? src : `meta/og-image.png`}
       alt={`Cover Image for ${title}`}
-      className={cn("shadow-small", {
+      className={cn("shadow-small min-h-315 object-cover", {
         "hover:shadow-medium transition-shadow duration-200": slug,
       })}
     />
