@@ -14,7 +14,6 @@ const PostBody = dynamic(import("../../components/post-body"));
 const MoreStories = dynamic(import("../../components/more-stories"));
 
 export default function Post({ post, morePosts, preview }) {
-  console.log(post);
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -43,6 +42,10 @@ export default function Post({ post, morePosts, preview }) {
                 <meta
                   name="twitter:image"
                   content={`https://blog.alexisdavalos.dev/${post.ogImage.url}`}
+                />
+                <meta
+                  name="twitter:description"
+                  content={`Written by: ${post.author.name}`}
                 />
                 <link
                   rel="stylesheet"
