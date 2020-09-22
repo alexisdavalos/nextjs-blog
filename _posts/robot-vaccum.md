@@ -15,7 +15,7 @@ topics:
   - "big-o"
 ---
 
-Over the course of the last couple of months, I've been practicing a daily committment to solving at least one coding challenge per day. So today I'm going to be writing about my approach to solving the Robot Vaccum Problem and breaking down the complexity analysis. We will be focusing on writing the solution in **Javascript** in this article.
+Over the course of the last couple of weeks, I've been practicing a daily committment to solving at least one coding challenge per day. So today I'm going to be writing about my approach to solving the Robot Vaccum Problem and breaking down the complexity analysis. We will be focusing on writing the solution in **Javascript** in this article.
 
 ## Problem Statement
 
