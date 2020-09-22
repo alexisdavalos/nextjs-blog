@@ -9,6 +9,7 @@ const PostTitle = dynamic(import("../../components/post-title"));
 const Layout = dynamic(import("../../components/layout"));
 const Container = dynamic(import("../../components/container"));
 const Header = dynamic(import("../../components/header"));
+const Avatar = dynamic(import("../../components/avatar"));
 const PostHeader = dynamic(import("../../components/post-header"));
 const PostBody = dynamic(import("../../components/post-body"));
 const MoreStories = dynamic(import("../../components/more-stories"));
@@ -60,6 +61,15 @@ export default function Post({ post, morePosts, preview }) {
                 topics={post.topics}
               />
               <PostBody content={post.content} />
+              <p className="text-gray-600 text-xl mb-3 hidden md:block ">
+                Written By:
+              </p>
+              <Avatar
+                name={post.author.name}
+                picture={post.author.picture}
+                date
+                date={post.date}
+              />
             </article>
             {morePosts ? (
               <MoreStories posts={morePosts} />
