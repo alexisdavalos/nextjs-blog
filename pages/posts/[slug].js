@@ -40,7 +40,10 @@ export default function Post({ post, morePosts, preview }) {
                   content={`https://blog.alexisdavalos.dev/posts/${post.slug}`}
                 />
                 <meta name="twitter:title" content={post.title} />
-                <meta name="twitter:image" content={post.ogImage.url} />
+                <meta
+                  name="twitter:image"
+                  content={`https://blog.alexisdavalos.dev/${post.ogImage.url}`}
+                />
                 <link
                   rel="stylesheet"
                   href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css"
