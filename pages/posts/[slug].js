@@ -15,7 +15,6 @@ const PostBody = dynamic(import("../../components/post-body"));
 const MoreStories = dynamic(import("../../components/more-stories"));
 
 export default function Post({ post, morePosts, preview }) {
-  console.log(post);
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
