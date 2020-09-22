@@ -96,7 +96,7 @@ for (key in oppositeMoves) {
 return true;
 ```
 
-By using this mirroring technique with a pre-built **Object/Dictionary** you can take advantage of the `O(1) time` loopup speed to solve this quickly with a final complexity of: <br> _`O(n) time | O(n) space`_.
+By using this mirroring technique with a pre-built **Object/Dictionary** you can take advantage of the `O(1) time` look-up speed to solve this quickly with a final complexity of: <br> _`O(n) time | O(n) space`_.
 
 <h3>Final Solution Code:</h3>
 
