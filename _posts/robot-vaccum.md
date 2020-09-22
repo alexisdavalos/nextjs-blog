@@ -56,7 +56,7 @@ We are now going to move forward to looping through our input string with a **fo
 ```javascript
 // counting robot instructions
 for (char of string) {
-  // move/key not in hash moveCounts hash table
+  // move/key not in moveCounts hash table
   if (!moveCounts[char]) {
     // initialize key as 1
     moveCounts[char] = 1;
