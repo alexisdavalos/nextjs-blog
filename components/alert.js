@@ -5,7 +5,7 @@ import { ALERT_PATH } from "../lib/constants";
 export default function Alert({ dark = true }) {
   return (
     <div
-      className={cn("fixed top-0 z-50 border-b w-full", {
+      className={cn("fixed top-0 z-50 mb-16 border-b w-full", {
         "bg-accent-7 border-accent-7 text-white": dark,
         "bg-accent-1 border-accent-2": !dark,
       })}
