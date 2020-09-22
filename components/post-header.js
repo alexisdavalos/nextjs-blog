@@ -1,6 +1,7 @@
 import Avatar from "../components/avatar";
 import CoverImage from "../components/cover-image";
 import PostTitle from "../components/post-title";
+import animations from "../styles/animations.module.scss";
 
 export default function PostHeader({
   title,
@@ -16,14 +17,18 @@ export default function PostHeader({
       <div className="hidden md:block md:mb-6">
         <Avatar name={author.name} picture={author.picture} date={date} />
       </div>
-      {topics.map((topic) => (
-        <span
-          key={Math.random()}
-          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-6"
-        >
-          #{topic}
-        </span>
-      ))}
+      <div
+        className={`border-b-4 ${animations.hueRotate} ${animations.bottomShadow}`}
+      >
+        {topics.map((topic) => (
+          <span
+            key={Math.random()}
+            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-6"
+          >
+            #{topic}
+          </span>
+        ))}
+      </div>
       <div className="mb-8 md:mb-16 sm:mx-0">
         <CoverImage title={title} src={coverImage} hero />
       </div>
