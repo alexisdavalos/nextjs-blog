@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Head from "next/head";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
-import { CMS_NAME } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
 
 const PostTitle = dynamic(import("../../components/post-title"));
@@ -15,6 +14,7 @@ const PostBody = dynamic(import("../../components/post-body"));
 const MoreStories = dynamic(import("../../components/more-stories"));
 
 export default function Post({ post, morePosts, preview }) {
+  console.log(post);
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -34,6 +34,13 @@ export default function Post({ post, morePosts, preview }) {
                 <meta property="og:title" content={post.title} />
                 <meta property="og:date" content={post.date} />
                 <meta property="og:author" content={post.author.name} />
+                <meta name="twitter:card" content="summary" />
+                <meta
+                  name="twitter:url"
+                  content={`https://blog.alexisdavalos.dev/posts/${post.slug}`}
+                />
+                <meta name="twitter:title" content={post.title} />
+                <meta name="twitter:image" content={post.ogImage.url} />
                 <link
                   rel="stylesheet"
                   href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css"
