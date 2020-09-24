@@ -18,12 +18,12 @@ export default function PostHeader({
         <Avatar name={author.name} picture={author.picture} date={date} />
       </div>
       <div
-        className={`border-b-4 ${animations.hueRotate} ${animations.bottomShadow}`}
+        className={`border-b-4${animations.hueRotate} ${animations.bottomShadow}`}
       >
         {topics.map((topic) => (
           <span
             key={Math.random()}
-            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-6"
+            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-1 mb-4"
           >
             #{topic}
           </span>

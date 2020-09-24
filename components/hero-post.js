@@ -14,17 +14,31 @@ export default function HeroPost({
   coverImage,
   date,
   excerpt,
+  topics,
   author,
   slug,
 }) {
   return (
     <section>
-      <div className="mb-10 md:mb-16">
+      <div className="mb-4 md:mb-16">
         <CoverImage title={title} src={coverImage} slug={slug} hero />
+        <div className="mt-4 hidden sm:block md:block">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+            #latest
+          </span>
+          {topics.map((topic) => (
+            <span
+              key={Math.random()}
+              className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              #{topic}
+            </span>
+          ))}
+        </div>
       </div>
       <div className="md:grid md:grid-cols-2 md:col-gap-8 lg:col-gap-8 mb-16 md:mb-18">
         <div className="mx-5">
-          <h3 className="mb-4 text-xl sm:text-2xl md:text-3xl lg:text-6xl leading-tight">
+          <h3 className="mb-4 mt-8 md:mt-0 text-xl sm:text-2xl md:text-3xl lg:text-6xl leading-tight">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
               <a className="hover:underline">{title}</a>
             </Link>
