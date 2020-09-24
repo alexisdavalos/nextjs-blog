@@ -8,8 +8,8 @@ export default function Intro() {
     <div
       className={`border-b-4 ${animations.hueRotate} ${animations.bottomShadow}`}
     >
-      <section className="flex-row md:flex-row flex items-center align-middle justify-evenly mt-16 mb-16 md:mb-12">
-        <div className="flex flex-col w-2/3">
+      <section className="flex-row md:flex-row flex items-center align-middle justify-evenly mt-16 mb-4 md:mb-12">
+        <div className="flex flex-col w-full sm:w-2/3">
           <Link href="/">
             <h1 className="hover:underline cursor-pointer text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
               Stoic.Dev
@@ -22,7 +22,7 @@ export default function Intro() {
             backSpeed={75}
           />
         </div>
-        <h4 className="w-1/3 text-left text-xs opacity-75 md:pl-8">
+        <h4 className="w-1/3 text-left text-xs opacity-75 hidden sm:block md:pl-8">
           Statically generated thoughts using{" "}
           <a
             href="https://nextjs.org/"
