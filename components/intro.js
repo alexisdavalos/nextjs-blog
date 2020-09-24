@@ -9,9 +9,9 @@ export default function Intro() {
       className={`border-b-4 ${animations.hueRotate} ${animations.bottomShadow}`}
     >
       <section className="flex-row md:flex-row flex items-center align-middle justify-evenly mt-16 mb-16 md:mb-12">
-        <div className="flex flex-col w-1/2">
+        <div className="flex flex-col w-2/3">
           <Link href="/">
-            <h1 className="hover:underline cursor-pointer text-6xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
+            <h1 className="hover:underline cursor-pointer text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
               Stoic.Dev
             </h1>
           </Link>
