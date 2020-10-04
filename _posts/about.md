@@ -40,7 +40,7 @@ topics:
 - 📚 I’m currently reading "The Secret Teachings of All Ages" by Manly P. Hall
 - 💬 Ask me about design, crypto, surfing, skiing, skating, and philosophy
 - ⭐️ Fun fact: I speak three languages: [ 🇺🇸 English | 🇪🇸 Spanish | 🇷🇺 Russian ]
-- 💼 Check out my <a class="text-gray-700 font-bold hover:underline hover:text-blue-500 duration-200 transition-colors" href="https://www.alexisdavalos.dev" target="_blank">portfolio</a>, built with React.js or download my <a class="text-gray-700 font-bold hover:underline hover:text-blue-500 duration-200 transition-colors" href="https://www.alexisdavalos.dev/static/media/Alexis_Davalos_Resume.5dfe0da1.pdf" target="_blank">resume</a>
+- 💼 Check out my <a class="text-gray-700 font-bold hover:underline hover:text-blue-500 duration-200 transition-colors" href="https://www.alexisdavalos.dev" target="_blank">portfolio</a>, built with React.js,download my <a class="text-gray-700 font-bold hover:underline hover:text-blue-500 duration-200 transition-colors" href="https://www.alexisdavalos.dev/static/media/Alexis_Davalos_Resume.5dfe0da1.pdf" target="_blank">resume</a> or check out my <a class="text-gray-700 font-bold hover:underline hover:text-blue-500 duration-200 transition-colors" href="https://blog.alexisdavalos.dev" target="_blank">blog</a>
 
 #
 
