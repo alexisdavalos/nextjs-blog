@@ -19,7 +19,7 @@ Lets get to the root of the problem. Today we will write an algorithm that takes
 
 ## Problem Statement
 
-> Write a function that takes in a Binary Tree and inverts it. In other words, the function should swap every left node in the tree for its corresponding right node. Each Binary Tree node has an integer value, a left child node, and a right child node. Children nodes can either be BinaryTree nodes themselves or None / null.
+> Write a function that takes in a Binary Tree and inverts it. In other words, the function should swap every left node in the tree for its corresponding right node. Each Binary Tree node has an integer value, a left child node, and a right child node. Children nodes can either be Binary Tree nodes themselves or None / null.
 
 ## Starter Code:
 
@@ -36,9 +36,13 @@ def invertBinaryTree(tree):
     return
 
 # Tree Construction
-tree = Tree(1)
+tree = Tree(4)
 tree.left = Tree(2)
-tree.right = Tree(3)
+tree.right = Tree(6)
+tree.left.left = Tree(1)
+tree.left.right = Tree(3)
+tree.left.left.left = Tree(5)
+tree.left.left.right = Tree(7)
 
 ```
 
@@ -248,7 +252,9 @@ class Tree:
 
 ```
 
-In a familiar **BFS** manner, we traversed through our tree structure, except this time we created an inner loop to keep track of each level in our tree and therefore the result should now look like this:
+In a familiar **BFS** manner, we traversed through our tree structure, except this time we created an inner loop to keep track of each level in our tree and therefore the result should be a list with subarrays for every level of our tree.
+
+The following print statements..
 
 ```python
 print('Original', tree)
