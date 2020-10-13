@@ -18,11 +18,11 @@ for (let i = 0; i < arr.length; i++) {
 
 ## Demo
 
-[https://stoicdev.vercel.app/](https://stoicdev.vercel.app/)
+[https://blog.alexisdavalos.dev/](https://blog.alexisdavalos.dev/)
 
 ## Deployment
 
-Deployed With [Vercel](https://vercel.com):
+Deployed With [Vercel](https://vercel.com)
 
 ### Related examples
 
