@@ -14,13 +14,13 @@ export default function Alert({ dark = true }) {
         <div className="py-2 text-center text-sm">
           {dark ? (
             <>
-              Coding Challenges{" "}
+              Coding Challenges Available on{" "}
               <a
                 href={`${ALERT_PATH}`}
                 className="underline hover:text-blue-500 duration-200 transition-colors"
                 target="_blank"
               >
-                on GitHub
+                GitHub
               </a>
               .
             </>

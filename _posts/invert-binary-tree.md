@@ -1,13 +1,13 @@
 ---
 title: "How to Invert a Binary Tree"
 excerpt: "Lets get to the root of the problem. Today we will write an algorithm that takes in a Binary Tree and inverts it. In other words, the function will swap every left node in the tree for its corresponding right node. This article will focus on implementing a solution in Python."
-coverImage: "/assets/blog/invert-binary-tree/invert-binary-tree.jpg"
+coverImage: "/assets/blog/posts/invert-binary-tree.jpg"
 date: "2020-10-13T07:37:07.322Z"
 author:
   name: Alexis Davalos
   picture: "/assets/blog/authors/alexis.jpeg"
 ogImage:
-  url: "/assets/blog/invert-binary-tree/invert-binary-tree.jpg"
+  url: "/assets/blog/posts/invert-binary-tree.jpg"
 topics:
   - "binary-trees"
   - "coding"

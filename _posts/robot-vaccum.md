@@ -1,13 +1,13 @@
 ---
 title: "How to Solve: Robot Vaccum Algorithm Problem"
 excerpt: "Given a string representing the sequence of moves a robot vacuum makes, return whether or not it will return to its original position. The string will only contain L, R, U, and D characters, representing left, right, up, and down respectively."
-coverImage: "/assets/blog/robot-vaccum/robot-vaccum-cover.jpg"
+coverImage: "/assets/blog/posts/robot-vaccum-cover.jpg"
 date: "2020-09-22T10:51:07.322Z"
 author:
   name: Alexis Davalos
   picture: "/assets/blog/authors/alexis.jpeg"
 ogImage:
-  url: "/assets/blog/robot-vaccum/robot-vaccum-cover.jpg"
+  url: "/assets/blog/posts/robot-vaccum-cover.jpg"
 topics:
   - "algorithms"
   - "coding"
