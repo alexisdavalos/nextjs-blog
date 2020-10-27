@@ -15,6 +15,12 @@ for (let i = 0; i < arr.length; i++) {
   console.log(array[i]);
 }
 ```
+```python
+arr = [3,4,5,6]
+for num in arry:
+  print(num)
+```
+
 
 ## Demo
 
