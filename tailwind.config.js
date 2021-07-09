@@ -5,6 +5,18 @@ module.exports = {
   },
   purge: ["./components/**/*.js", "./pages/**/*.js"],
   theme: {
+    maxHeight: {
+      '0': '0',
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
+      'full': '100%',
+      100: "100px",
+      200: "200px",
+      250: "250px",
+      300: "300px",
+      315: "315px",
+     },
     extend: {
       colors: {
         "accent-1": "#FAFAFA",
@@ -54,6 +66,7 @@ module.exports = {
         full: "100%",
         100: "100px",
         200: "200px",
+        250: "250px",
         300: "300px",
         315: "315px",
       },
