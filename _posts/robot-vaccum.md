@@ -39,8 +39,8 @@ console.log(robotVacuum("RUULLDRD")); // "RUULLDRD", return true
 ```javascript
 const robotVacuum = (string) => {
   // Initialized Variables:
-  let moveCounts = {};
-  let oppositeMoves = {
+  let hashTable = {};
+  let moves = {
     L: "R",
     R: "L",
     D: "U",
@@ -56,13 +56,13 @@ We are now going to move forward to looping through our input string with a **fo
 ```javascript
 // counting robot instructions
 for (char of string) {
-  // move/key not in moveCounts hash table
-  if (!moveCounts[char]) {
+  // move/key not in hash table
+  if (!hashTable[char]) {
     // initialize key as 1
-    moveCounts[char] = 1;
+    hashTable[char] = 1;
   } else {
     // increment key count by 1
-    moveCounts[char] += 1;
+    hashTable[char] += 1;
   }
 }
 ```
@@ -73,7 +73,7 @@ After this **for Loop** we should see **moveCounts** populate like this if we we
 // Example of passing "LR" into our function
 robotVacuum("LR")
 // Adding a print statement after the first for loop
-console.log(moveCounts);
+console.log(hashTable);
 // Result:
 { L: 1, R: 1 }
 ```
@@ -82,9 +82,9 @@ Next, we are going to compare the values stored in **moveCounts** utilizing our 
 
 ```javascript
 // loop through keys in opposite moves obj
-for (key in oppositeMoves) {
+for (key in hashTable) {
   // check equality of opposite counts
-  if (oppositeMoves[key] === oppositeMoves[moves[key]]) {
+  if (hashTable[key] === hashTable[moves[key]]) {
     // keep looping
     continue;
   } else {
@@ -103,8 +103,8 @@ By using this mirroring technique with a pre-built **Object/Dictionary** you can
 ```javascript
 const robotVacuum = (string) => {
   // Initialized Variables:
-  let moveCounts = {};
-  let oppositeMoves = {
+  let hashTable = {};
+  let moves = {
     L: "R",
     R: "L",
     D: "U",
@@ -113,10 +113,10 @@ const robotVacuum = (string) => {
 
   // counting robot instructions
   for (char of string) {
-    // move/key not in hash moveCounts hash table
-    if (!moveCounts[char]) {
+    // move/key not in hash table
+    if (!hashTable[char]) {
       // initialize key as 1
-      moveCounts[char] = 1;
+      hashTable[char] = 1;
     } else {
       // increment key count by 1
       hashTable[char] += 1;
@@ -124,9 +124,9 @@ const robotVacuum = (string) => {
   }
 
   // loop through keys in opposite moves obj
-  for (key in oppositeMoves) {
+  for (key in hashTable) {
     // check equality of opposite counts
-    if (oppositeMoves[key] === oppositeMoves[moves[key]]) {
+    if (hashTable[key] === hashTable[moves[key]]) {
       // keep looping
       continue;
     } else {
@@ -137,6 +137,12 @@ const robotVacuum = (string) => {
   // All keys had even counts, cycled all keys
   return true;
 };
+
+// Ex Test Cases: Given the following strings...
+
+console.log(robotVacuum("LR")); // "LR", return true
+console.log(robotVacuum("URURD")); // "URURD", return false
+console.log(robotVacuum("RUULLDRD")); // "RUULLDRD", return true
 ```
 
 <p class="text-lg text-black text-bold">You can find the source code to this problem on <a class="text-gray-700  font-bold hover:underline hover:text-blue-500 duration-200 transition-colors" href="https://github.com/alexisdavalos/CodingChallenges/tree/master/RobotVaccum">Github</a></p>

@@ -57,14 +57,14 @@ Our first step is then to initialize a queue within our **`invertBinaryTree`** f
 ## Variable Initialization:
 
 ```python
-def invertBinaryTree(root):
+def invertBinaryTree(tree):
     # Initialize a queue to store tree nodes
     queue = []
     # Tree = None Base Case
     if tree == None:
         return None
     # Add root node into queue
-    queue.append(root)
+    queue.append(tree)
 ```
 
 In this snippet, we have initialized a queue to store our tree nodes. We have also established that if the input tree is equal to **`None`** we simply return **`None`**. Next, if our code passes this check, we can go ahead and add the **`Root`** node to our queue.
